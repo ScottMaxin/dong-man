@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>动画</title>
+	<style>
+	.beijing{
+	   width:500px;
+	   height:700px;
+	   background:#FBE400;
+	   overflow:hidden;
+	   margin-left:100px;
+	}
+	.beijing>.datou{
+	   width:230px;
+	   height:160px;
+	   border:7px solid #000;
+	   border-radius:50%;
+	   margin-left:130px;
+	   margin-top:90px;
+	   position:absolute;
+	   background:#EBEBEB;
+	   z-index:1;
+	}
+	.beijing>.datou>.zuoyian{
+	   width:20px;
+	   height:20px;
+	   border-radius:50%;
+	   background:#000;
+	   margin-top:100px;
+	   margin-left:60px;
+	   position:absolute;
+	   animation:zxc 1s both infinite linear; 
+	}
+	  @keyframes zxc{
+	       0%{transform:rotateX(0deg);}
+		   100%{transform:rotateX(90deg);}
+		   }
+	.beijing>.datou>.youyian{
+	   width:20px;
+	   height:20px;
+	   border-radius:50%;
+	   background:#000;
+	   margin-top:100px;
+	   margin-left:150px;
+	   position:absolute;
+	    animation:zxc 1s both infinite linear; 
+	}
+	 @keyframes zxc{
+	       0%{transform:rotateX(0deg);}
+		   100%{transform:rotateX(90deg);}
+		   }
+	.beijing>.datou>.yanxian{
+	   width:72px;
+	   height:18px;
+	   border-bottom:3px solid #000;
+	   margin-top:100px;
+	   margin-left:79px;
+	   position:absolute;
+	   border-radius:50%;
+	}
+	.beijing>.shenti{
+	   width:600px;
+	   height:700px;
+	   background:#EBEBEB;
+	   border:7px solid #000;
+	   border-radius:50%;
+	    margin-top:201px;
+	   margin-left:-60px;
+        position:absolute;
+	}
+	.beijing>.datou>.bozi{
+	   width:152px;
+	   height:32px;
+	   border-bottom:35px solid #EBEBEB;
+	   margin-top:119px;
+	   margin-left:36px;
+	   position:absolute;
+	   border-radius:50%;
+	}
+	.beijing>.shenti>.pikazuo{
+	   width:30px;
+	   height:90px;
+	   border-radius:50%;
+	   background:#FBE400;
+	   margin-left:339px;
+	   margin-top:160px;
+	   position:absolute;
+	    border:4px solid #000;
+		transform-origin:bottom;
+        transform:rotateZ(27deg);
+		z-index:1;
+		animation:don 1s both infinite linear; 
+	}
+	@keyframes don{
+	       0%{transform:rotateZ(27deg);}
+		   100%{transform:rotateZ(37deg);}
+		   }
+	.beijing>.shenti>.pikazuo>.era{
+		   width:30px;
+	   height:30px;
+	   background:#FBE400;
+	   	margin-left:8px;
+	   margin-top:70px;
+	   position:absolute;
+	}
+	.beijing>.shenti>.pikazuo>.zuoer{
+	    width:30px;
+		height:30px;
+		background:#000;
+	    position:absolute;
+		border-radius:23px 23px 0px 0px;
+	}
+	.beijing>.shenti>.pikayou{
+	   width:30px;
+	   height:90px;
+	   border-radius:50%;
+	   background:#FBE400;
+	   margin-left:398px;
+	   margin-top:179px;
+	   position:absolute;
+	    border:4px solid #000;
+		transform-origin:bottom;
+        transform:rotateZ(64deg);
+		transform-style:preserve-3d;
+		z-index:1;
+	    animation:dong 1s both infinite linear; 
+	}
+	@keyframes dong{
+	       0%{transform:rotateZ(64deg);}
+		   100%{transform:rotateZ(74deg);}
+		   }
+	.beijing>.shenti>.pikayou>.erb{
+	   width:30px;
+	   height:30px;
+	   background:#FBE400;
+	   	margin-left:-2px;
+	   margin-top:70px;
+	   position:absolute;
+	}
+	.beijing>.shenti>.pikayou>.youer{
+	    width:30px;
+		height:30px;
+		background:#000;
+	    position:absolute;
+		border-radius:23px 23px 0px 0px;
+	}
+	.beijing>.shenti>.pikatou{
+	   width:127px;
+	   height:116px;
+	   background:#FBE400;
+	   margin-left:308px;
+	   margin-top:225px;
+	   position:absolute;
+	   border:4px solid #000;
+	   border-radius:50%;
+	   transform-origin:bottom;
+       transform:rotateZ(16deg);
+	}
+	.beijing>.shenti>.pikatou>.era{
+	   width:30px;
+	   height:30px;
+	   background:#FBE400;
+	   margin-left:28px;
+	   margin-top:12px;
+	   position:absolute;
+	}
+	.beijing>.shenti>.pikashen{
+	  width:117px;
+	  height:60px;
+	  background:#FBE400;
+	  border-radius:23px 23px 46px 49px;
+	  border:4px solid #000;
+      margin-left:338px;
+	  margin-top:300px;
+	  position:absolute;
+	  z-index:1;
+	  transform-origin: bottom;
+      transform: rotateZ(-7deg);
+	}
+	.beijing>.shenti>.pikashen>.shen{
+	   width:118px;
+	   height:20px;
+	   background:#FBE400;
+	   margin-top:-5px;
+	   margin-left:-2px;
+	   position:absolute;
+	   border-radius:347px 0px 14px 64px;
+	}
+	.beijing>.shenti>.pikatou>.lian{
+	  width:20px;
+	  height:32px;
+	  background:#F80604;
+	  border-radius:50%;
+	  margin-left:4px;
+	  margin-top:63px;
+	  position:absolute;
+	  transform-origin:bottom;
+      transform:rotateZ(-23deg);
+	  border-left:4px solid #000;
+	}
+	.beijing>.shenti>.pikashen>.shen>.shou{
+	  width:36px;
+	  height:15px;
+	  background:#FBE400;
+	  border:4px solid #000;
+	   margin-left:-20px;
+	  margin-top:9px;
+	  position:absolute;
+	  transform-origin:bottom;
+      transform:rotateZ(24deg);
+	   border-radius:50%;
+	}
+	.beijing>.shenti>.pikashen>.shen>.shou>.diana{
+	  width:8px;
+	  height:8px;
+	  background:#000;
+	  border-radius:50%;
+	   margin-left:-5px;
+	  margin-top:0px;
+	  position:absolute;
+	}
+	.beijing>.shenti>.pikashen>.shen>.shou>.dianb{
+	  width:11px;
+	  height:8px;
+	  background:#000;
+	  border-radius:50%;
+	   margin-left:-8px;
+	   margin-top:3px;
+	  position:absolute;
+	}
+	.beijing>.shenti>.pikashen>.shen>.shou>.dianc{
+	  width:8px;
+	  height:8px;
+	  background:#000;
+	  border-radius:50%;
+	   margin-left:-6px;
+	  margin-top:6px;
+	  position:absolute;
+	}
+	.beijing>.shenti>.pikashen>.shen>.shou>.shoua{
+	  width:35px;
+	  height:18px;
+	  background:#FBE400;
+	   margin-left:15px;
+	  margin-top:-2px;
+	  position:absolute;
+	  border-radius:50%;
+	}
+	.beijing>.shenti>.pikashen>.shen>.beia{
+	   width:65px;
+	   height:10px;
+	   background:#FBE400;
+	    margin-left:33px;
+	  margin-top:18px;
+	  position:absolute;
+	  border-radius:50%;
+	  border-top:7px solid #772300;
+	}
+	.beijing>.shenti>.pikashen>.shen>.beib{
+	   width:57px;
+	   height:10px;
+	   background:#FBE400;
+	    margin-left:37px;
+	  margin-top:33px;
+	  position:absolute;
+	  border-radius:50%;
+	   border-top:7px solid #772300;
+	}
+	.beijing>.shenti>.shouz{
+      width:10px;
+	  height:10px;
+	  background:#FBE400;
+	  border:4px solid #000;
+	   margin-left:453px;
+	  margin-top:307px;
+	  position:absolute;
+	  transform-origin:bottom;
+      transform:rotateZ(-22deg);
+	   border-radius:0px 7px 12px 0px;
+	}
+	.beijing>.shenti>.shouz>.sza{
+       width:11px;
+	  height:8px;
+	  background:#000;
+	  border-radius:50%;
+	   margin-left:5px;
+	  margin-top:-3px;
+	  position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(11deg);
+	}
+	.beijing>.shenti>.shouz>.szb{
+      width:11px;
+	  height:8px;
+	  background:#000;
+	  border-radius:50%;
+	   margin-left:10px;
+	  margin-top:4px;
+	  position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(-42deg);
+	}
+	.beijing>.shenti>.shouz>.szc{
+     width:9px;
+	  height:4px;
+	  background:#FBE400;
+	  border-radius:50%;
+	   margin-left:6px;
+	  margin-top:6px;
+	  position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(-12deg);
+	  }
+	  .beijing>.shenti>.shouz>.szd{
+      width:7px;
+	  height:5px;
+	  background:#FBE400;
+	  border-radius:50%;
+	   margin-left:3px;
+	  position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(383deg);
+	}
+	.beijing>.shenti>.pikashen>.jiao{
+	  width:5px;
+	  height:20px;
+	  background:#FBE400;
+	  border-radius:50%;
+	    margin-left:0px;
+	  margin-top:21px;
+	  position:absolute;
+	   border:4px solid #000;
+	   transform-origin:bottom;
+      transform:rotateZ(327deg);
+	}
+	.beijing>.shenti>.pikashen>.jiaoxian{
+	   width:23px;
+	   height:23px;
+	   border-bottom:4px solid #000;
+	   margin-top:9px;
+	   margin-left:-9px;
+	   position:absolute;
+	   border-radius:50%;
+	   transform-origin:bottom;
+      transform:rotateZ(467deg);
+	}
+	.beijing>.shenti>.weiba{
+	  width:119px;
+	  height:29px;
+	   transform-origin:bottom;
+      transform:rotateZ(535deg);
+	   margin-top:302px;
+	   margin-left:404px;
+	   position:absolute;
+	   z-index:999;
+	   }
+	.beijing>.shenti>.weiba>.weixian{
+	     width:0px;
+	   height:0px;
+       border:8px solid transparent;
+       border-left:23px solid  #000;
+        margin-top:5px;
+	   margin-left:99px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(345deg);
+	}
+	.beijing>.shenti>.weiba>.weixian>.weia{
+	   width:0px;
+	   height:0px;
+       border:5px solid transparent;
+       border-left:23px solid  #772300;
+        margin-top:-6px;
+	   margin-left:-20px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(362deg);
+	   }
+	   .beijing>.shenti>.weiba>.weib{
+	    width:21px;
+		height:15px;
+		background:#FBE400;
+		 border:4px solid #000;
+		   margin-top:0px;
+	   margin-left:76px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateX(44deg) rotateY(-25deg) rotateZ(366deg);
+	   }
+	   .beijing>.shenti>.weiba>.weib>.weiba{
+	    width:7px;
+	    height:6px;
+	    background: #772300;
+	    margin-left:19px;
+	    margin-top:12px;
+	    position:absolute;
+	    border-radius:50%;
+	   }
+	    .beijing>.shenti>.weiba>.weib>.weibb{
+	    width:9px;
+	    height:6px;
+	    background: #772300;
+	    margin-left:18px;
+	    margin-top:7px;
+	    position:absolute;
+	    border-radius:50%;
+	   }
+	    .beijing>.shenti>.weiba>.weic{
+	    width:30px;
+		height:22px;
+		background:#FBE400;
+		 border:4px solid #000;
+		   margin-top:-8px;
+	   margin-left:46px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateX(44deg) rotateY(-25deg) rotateZ(375deg);
+	   }
+	   .beijing>.shenti>.weiba>.weic>.weica{
+	    width:7px;
+	    height:10px;
+	    background: #FBE400;
+	    margin-left:28px;
+	    margin-top:13px;
+	    position:absolute;
+	    border-radius:50%;
+	   }
+	   .beijing>.shenti>.weiba>.weid{
+	     width:48px;
+		 height:34px;
+		 background:#FBE400;
+		 border:4px solid #000;
+		 margin-top:-27px;
+	     margin-left:1px;
+	     position:absolute;
+	     transform-origin:bottom;
+         transform:rotateX(55deg) rotateY(-20deg) rotateZ(393deg);
+	   }
+	   .beijing>.shenti>.weiba>.weid>.weida{
+	    width:10px;
+	    height:20px;
+	    background: #FBE400;
+	    margin-left:45px;
+	    margin-top:13px;
+	    position:absolute;
+	    border-radius:50%;
+	   }
+	   .beijing>.shenti>.tiaoa{
+	   width:50px;
+	   height:36px;
+	   border-bottom:3px solid #000;
+	   margin-top:230px;
+	   margin-left:301px;
+	   position:absolute;
+	   border-radius:50%;
+	    transform-origin:bottom;
+      transform:rotateZ(-116deg);
+		 }
+	 .beijing>.shenti>.tiaob{
+	   width:47px;
+	   height:23px;
+	   border-bottom:3px solid #000;
+	   margin-top:209px;
+	   margin-left:403px;
+	   position:absolute;
+	   border-radius:50%;
+	    transform-origin:bottom;
+      transform:rotateZ(-68deg);
+		 }
+	 .beijing>.shenti>.tiaob>.tiaoba{
+	   width:30px;
+	    height:15px;
+	    background: #FBE400;
+	    margin-left:-12px;
+	    margin-top:16px;
+	    position:absolute;
+	    border-radius:50%;
+	   }
+	 .beijing>.shenti>.tiaoc{
+	   width:47px;
+	   height:23px;
+	   border-bottom:3px solid #000;
+	   margin-top:278px;
+	   margin-left:439px;
+	   position:absolute;
+	   border-radius:50%;
+	    transform-origin:bottom;
+      transform:rotateZ(-36deg);
+		 }
+	 .beijing>.shenti>.tiaod{
+	   width:47px;
+	   height:23px;
+	   border-bottom:3px solid #000;
+	   margin-top:326px;
+	   margin-left:405px;
+	   position:absolute;
+	   border-radius:50%;
+	    transform-origin:bottom;
+      transform:rotateZ(-113deg);
+		 }
+	.beijing>.shenti>.tiaoe{
+	   width:47px;
+	   height:23px;
+	   border-bottom:3px solid #000;
+	   margin-top:332px;
+	   margin-left:325px;
+	   position:absolute;
+	   border-radius:50%;
+	    transform-origin:bottom;
+      transform:rotateZ(-96deg);
+		 }
+	.beijing>.shenti>.tiaoe>.yine{
+	    width:0px;
+	   height:0px;
+       border:9px solid transparent;
+       border-left:28px solid #000;
+        margin-top:-7px;
+	   margin-left:-8px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(199deg);
+	  opacity:0.3;
+	}
+	.beijing>.shenti>.tiaod>.yind{
+	    width:0px;
+	   height:0px;
+       border:12px solid transparent;
+       border-left:21px solid #000;
+        margin-top:-17px;
+	   margin-left:-8px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(199deg);
+	  opacity:0.3;
+	}
+		.beijing>.shenti>.tiaoc>.yinc{
+	    width:0px;
+	   height:0px;
+       border:12px solid transparent;
+       border-left:36px solid #000;
+        margin-top:7px;
+	   margin-left:12px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(-11deg);
+	  opacity:0.3;
+	}
+		.beijing>.shenti>.tiaoc>.yinc>.tiaocc{
+		 width:30px;
+	    height:35px;
+	    background: #FBE400;
+	    margin-left:-46px;
+	    margin-top:-59px;
+	    position:absolute;
+	    transform-origin:bottom;
+      transform:rotateZ(208deg);
+		}
+		.beijing>.shenti>.tiaob>.yinb{
+	    width:0px;
+	   height:0px;
+       border:12px solid transparent;
+       border-left:20px solid #000;
+        margin-top:11px;
+	   margin-left:20px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(0deg);
+	  opacity:0.3;
+	}
+		.beijing>.shenti>.tiaoa>.yina{
+	    width:0px;
+	   height:0px;
+       border:12px solid transparent;
+       border-left:42px solid #000;
+        margin-top:19px;
+	   margin-left:17px;
+	   position:absolute;
+	   transform-origin:bottom;
+      transform:rotateZ(-29deg);
+	  opacity:0.3;
+	}
+	.beijing>.shenti>.tiaoa>.yina>.tiaoaa{
+	   width:30px;
+	    height:35px;
+	    background: #FBE400;
+	    margin-left:-64px;
+	    margin-top:-10px;
+	    position:absolute;
+	    border-radius:50%;
+	   }
+	
+	.xiu{
+	   width:700px;
+	   height:215px;
+	   background:#fff;
+	   z-index:999;
+	   position:absolute;
+	}
+	.xiua{
+	   width:101px;
+	   height:367px;
+	   background:#fff;
+	   z-index:999;
+	   position:absolute;
+	   margin-top:-362px;
+	}
+	.xiub{
+	   width:101px;
+	   height:367px;
+	   background:#fff;
+	   z-index:999;
+	   position:absolute;
+	   margin-top:-362px;
+	   margin-left:600px;
+	}
+	</style>
+</head>
+<body>
+    <div class="beijing">
+	<div class="datou">
+	<div class="bozi"></div>
+	<div class="zuoyian"></div>
+	<div class="youyian"></div>
+	<div class="yanxian"></div>
+	</div>
+	<div class="shenti">
+	   <div class="pikazuo">
+	     <div class="zuoer"></div>
+		 	     <div class="era"></div>
+	   </div>
+	    <div class="pikayou">
+	     <div class="youer"></div>
+		 	     <div class="erb"></div>
+	   </div>
+	   <div class="pikatou">
+	   <div class="lian"></div>
+	   </div>
+	   				<div class="shouz">
+				 <div class="sza"></div>
+				 <div class="szb"></div>
+				  <div class="szc"></div>
+				   <div class="szd"></div>
+				</div>
+	   <div class="pikashen">
+	    <div class="shen">
+			    <div class="shou">
+				<div class="diana"></div>
+				<div class="dianb"></div>
+				<div class="dianc"></div>
+				<div class="shoua"></div>
+				</div>
+				<div class="beia"></div>
+				<div class="beib"></div>
+				</div>
+		<div class="jiao"></div>
+		<div class="jiaoxian"></div>
+	   </div>
+	   <div class="weiba">
+	     <div class="weixian"><div class="weia"></div></div>
+		 <div class="weib">
+		 <div class="weiba"></div>
+		 <div class="weibb"></div>
+		 </div>
+		 <div class="weic">
+		 <div class="weica"></div>
+		 </div>
+		  <div class="weid">
+		 <div class="weida"></div>
+		 </div>
+	   </div>
+	   <div class="tiaoa"><div class="yina"><div class="tiaoaa"></div></div></div>
+	   <div class="tiaob"><div class="yinb"></div><div class="tiaoba"></div></div>
+	   <div class="tiaoc"><div class="yinc"><div class="tiaocc"></div></div></div>
+	   <div class="tiaod"><div class="yind"></div></div>
+	   <div class="tiaoe"><div class="yine"></div></div>
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="xiu"></div>
+	<div class="xiua"></div>
+	<div class="xiub"></div>
+</body>
+</html>
